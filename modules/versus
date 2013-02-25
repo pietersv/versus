@@ -1,0 +1,111 @@
+var http = require('http');
+
+console.log("Initializing vesus}");
+
+/**
+ * General data structure
+ *
+ * {
+ *    originalTerm: String,
+ *    terms: {
+ *      [term] : {
+ *          search: boolean
+ *          count:  number,
+ *          matches: [String]
+ *       }
+ *     }
+ * }
+ * @type {Object}
+ */
+exports.versus = {
+
+
+  analyze: function(query, done) {
+
+    this.terms = {},
+    this.atbat = [],
+    this.iteration = 0,
+
+
+    this.atbat.push(decodeURIComponent(query));
+    this.iteration = 0;
+    this.analyze_one(done);
+
+  },
+
+  /**
+   * Removes item from list and searches its related items,
+   * until stopping criteria is met
+   * @param done
+   */
+  analyze_one: function(done) {
+    var self=this;
+    if (this.atbat.length>0 && this.iteration<10) {
+
+      var current_term = this.atbat.shift();
+      console.log(current_term);
+
+
+      this.search_bing(current_term, function(list) {
+
+        self.terms[current_term]=list;
+
+        for (var i=0; i<list.length; i++) {
+          self.atbat.push(list[i]);
+          console.log("..."+list[i]);
+        }
+
+        self.iteration += 1;
+
+        self.analyze_one(done);
+
+      });
+
+    }
+    else {
+      done(this.terms);
+    }
+  },
+
+  // searches Bing and calls the callback functin with a sorted array of string
+
+  search_bing: function(query, callback) {
+
+    var self = this;
+
+    http.get({
+        host:'api.bing.com',
+        path:'/osjson.aspx?query=' + encodeURIComponent(query+' vs ')
+    },
+    function (response) {
+      var str = '';
+
+      response.on('data', function (chunk) {
+        str += chunk;
+      });
+
+      response.on('end', function () {
+
+        callback(self.parse_bing(str));
+      });
+    }).end();
+  },
+
+
+  parse_bing:function (str) {
+
+
+    var data = JSON.parse(str);
+    var original = data[0],
+      versus = data[1],
+      match, matches = [],
+      len = original.trim().length + 1;
+
+    for (var i = 0; i < versus.length; i++) {
+      match = versus[i].slice(len).trim();
+      matches.push(match);
+    }
+
+    return matches;
+  }
+};

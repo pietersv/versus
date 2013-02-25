@@ -1,0 +1,14 @@
+<% for (term in data) { %>
+
+    <ul>
+        <li><%=term%></li>
+        <ul>
+            <% for (var i=0; i<data[term].length; i++) { %>
+              <LI><%=data[term][i] %></LI>
+            <% } %>
+        </ul>
+    </ul>
+
+
+<% } %>
+
