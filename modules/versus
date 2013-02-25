@@ -22,12 +22,14 @@ exports.versus = {
 
   analyze: function(query, done) {
 
+    this.terms_array = [],
     this.terms = {},
     this.atbat = [],
     this.iteration = 0,
 
 
-    this.atbat.push(decodeURIComponent(query));
+    this.atbat.push(query);
+    this.terms_array.push(query);
     this.iteration = 0;
     this.analyze_one(done);
 
@@ -40,30 +42,39 @@ exports.versus = {
    */
   analyze_one: function(done) {
     var self=this;
-    if (this.atbat.length>0 && this.iteration<10) {
+
+    if (this.atbat.length>0 && this.iteration<10  ) {
 
       var current_term = this.atbat.shift();
       console.log(current_term);
 
+        console.log(current_term);
 
-      this.search_bing(current_term, function(list) {
+        this.search_bing(current_term, function(list) {
 
-        self.terms[current_term]=list;
+          self.terms[current_term]=list;
 
-        for (var i=0; i<list.length; i++) {
-          self.atbat.push(list[i]);
-          console.log("..."+list[i]);
-        }
+          console.log(current_term);
 
-        self.iteration += 1;
+          for (var i=0; i<list.length && i<7; i++) {
+            if (!self.terms[list[i]]) {
+              console.log("..."+ list[i]);
+              self.terms_array.push(list[i]);
+              self.terms[list[i]]=[];
+              self.atbat.push(list[i]);
+            }
+            //console.log("..."+list[i]);
+          }
 
-        self.analyze_one(done);
+          self.iteration += 1;
 
-      });
+          self.analyze_one(done);
 
+        });
     }
     else {
-      done(this.terms);
+      console.log(this.atbat.length +": "+this.iteration);
+      done(this);
     }
   },
 

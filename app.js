@@ -46,7 +46,7 @@ var bing = {
 
 
 app.get('/search', function(req,res,next) {
-  var query = encodeURIComponent(req.param('query').trim());
+  var query = req.param('query').trim();
 
   versus.analyze(query, function(data) {
     res.send(data);
