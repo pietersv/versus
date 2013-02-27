@@ -312,7 +312,7 @@ Layout.ForceDirected.prototype.spring = function(edge) {
 		}
 
 		this.edgeSprings[edge.id] = new Layout.ForceDirected.Spring(
-			this.point(edge.source), this.point(edge.target), length, this.stiffness
+			this.point(edge.source), this.point(edge.target), length, this.stiffness / Math.pow(1.5,edge.data.rank)
 		);
 	}
 

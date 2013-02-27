@@ -17,70 +17,66 @@ console.log("Initializing vesus}");
  * }
  * @type {Object}
  */
-exports.versus = {
+exports.Versus = (function() {
+
+  function Versus() {
+    this.terms_array = [];
+    this.terms = {};
+    this.atbat = [];
+    this.iteration = 0;
+  };
 
 
-  analyze: function(query, done) {
-
-    this.terms_array = [],
-    this.terms = {},
-    this.atbat = [],
-    this.iteration = 0,
-
-
+  Versus.prototype.analyze = function(query, done) {
     this.atbat.push(query);
     this.terms_array.push(query);
     this.iteration = 0;
     this.analyze_one(done);
-
-  },
+  };
 
   /**
    * Removes item from list and searches its related items,
    * until stopping criteria is met
    * @param done
    */
-  analyze_one: function(done) {
+  Versus.prototype.analyze_one = function(done) {
     var self=this;
 
     if (this.atbat.length>0 && this.iteration<10  ) {
 
       var current_term = this.atbat.shift();
-      console.log(current_term);
-
-        console.log(current_term);
 
         this.search_bing(current_term, function(list) {
 
           self.terms[current_term]=list;
 
-          console.log(current_term);
+          console.log('['+current_term+']');
 
           for (var i=0; i<list.length && i<7; i++) {
-            if (!self.terms[list[i]]) {
-              console.log("..."+ list[i]);
-              self.terms_array.push(list[i]);
-              self.terms[list[i]]=[];
-              self.atbat.push(list[i]);
+
+            var match = list[i].trim();
+            if (!(self.terms[match])) {
+              console.log("...["+ match+']');
+              self.terms_array.push(match);
+              self.terms[match]=[];
+              self.atbat.push(match);
             }
-            //console.log("..."+list[i]);
           }
 
           self.iteration += 1;
 
           self.analyze_one(done);
-
         });
     }
     else {
       console.log(this.atbat.length +": "+this.iteration);
       done(this);
     }
-  },
+  };
 
   // searches Bing and calls the callback functin with a sorted array of string
 
-  search_bing: function(query, callback) {
+  Versus.prototype.search_bing =function(query, callback) {
 
     var self = this;
 
@@ -100,11 +96,10 @@ exports.versus = {
         callback(self.parse_bing(str));
       });
     }).end();
-  },
+  };
 
 
-  parse_bing:function (str) {
-
+  Versus.prototype.parse_bing = function (str) {
 
     var data = JSON.parse(str);
     var original = data[0],
@@ -114,9 +109,11 @@ exports.versus = {
 
     for (var i = 0; i < versus.length; i++) {
       match = versus[i].slice(len).trim();
-      matches.push(match);
+      matches.push(match.trim());
     }
 
     return matches;
-  }
-};
+  };
+
+  return Versus;
+})();

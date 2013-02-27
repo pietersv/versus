@@ -8,7 +8,7 @@ var express = require('express')
   , https = require('https')
   , http = require('http')
   , path = require('path')
-  , versus = require('./modules/versus').versus;
+  , Versus = require('./modules/versus').Versus;
 
 
 var app = express();
@@ -47,6 +47,8 @@ var bing = {
 
 app.get('/search', function(req,res,next) {
   var query = req.param('query').trim();
+
+  var versus = new Versus();
 
   versus.analyze(query, function(data) {
     res.send(data);
