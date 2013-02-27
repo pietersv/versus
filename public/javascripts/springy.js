@@ -150,6 +150,12 @@ Graph.prototype.getEdges = function(node1, node2) {
 	return [];
 };
 
+Graph.prototype.removeNodes = function() {
+  for (var nodeKey in this.nodeSet) {
+    this.removeNode(this.nodeSet[nodeKey]);
+  }
+}
+
 // remove a node and it's associated edges from the graph
 Graph.prototype.removeNode = function(node) {
 	if (node.id in this.nodeSet) {
@@ -312,7 +318,7 @@ Layout.ForceDirected.prototype.spring = function(edge) {
 		}
 
 		this.edgeSprings[edge.id] = new Layout.ForceDirected.Spring(
-			this.point(edge.source), this.point(edge.target), length, this.stiffness / Math.pow(1.5,edge.data.rank)
+			this.point(edge.source), this.point(edge.target), length, this.stiffness / Math.pow(1.5,edge.data.rank * 2)
 		);
 	}
 

@@ -58,12 +58,14 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html', 'springy', '
 
     render:function (data) {
 
+      if (graph) delete graph;
+
       var graph = new Graph(), term, dest_name, dest_node, dest_term, orig_node;
       var nodes = {};
 
       for (var i=0; i<data.terms_array.length; i++) {
         var term_name = data.terms_array[i];
-        console.log("Creating node "+term_name);
+
         nodes[term_name] = graph.newNode({label: term_name});
       }
 
@@ -71,18 +73,18 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html', 'springy', '
 
         term = data.terms[term_name]  ;
 
-        console.log("Creating arcs for "+term_name + " : "+term.length);
+
 
           orig_node = nodes[term_name];
 
           for (var k=0; k<term.length; k++) {
 
             dest_name = term[k];
-            console.log("... to "+dest_name);
+
 
             dest_node = nodes[dest_name];
             if (dest_node && orig_node) {
-              console.log("... to "+dest_name);
+
               graph.newEdge(orig_node, dest_node, {color: '#22A', rank: k});
             }
           }
