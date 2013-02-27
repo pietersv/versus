@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed103c9-6226-4c24-a23d-49ecf1aa5769" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/versus.iml" afterPath="$PROJECT_DIR$/.idea/versus.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/springy.js" afterPath="$PROJECT_DIR$/public/javascripts/springy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.js" afterPath="$PROJECT_DIR$/public/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="versus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +25,7 @@
       <file leaf-file-name="versus" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/versus">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="26" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
+            <state line="60" column="35" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,7 +52,7 @@
       <file leaf-file-name="springyui.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/springyui.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="208" column="14" selection-start="6048" selection-end="6049" vertical-scroll-proportion="-7.576923">
+            <state line="208" column="14" selection-start="6048" selection-end="6049" vertical-scroll-proportion="17.576923">
               <folding />
             </state>
           </provider>
@@ -65,7 +61,7 @@
       <file leaf-file-name="springy.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/springy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="320" column="113" selection-start="8773" selection-end="8773" vertical-scroll-proportion="0.3322091">
+            <state line="321" column="88" selection-start="8779" selection-end="8779" vertical-scroll-proportion="0.8381113">
               <folding />
             </state>
           </provider>
@@ -431,13 +427,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/versus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="26" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/basic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="21" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0">
@@ -466,6 +455,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modules/versus">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="35" selection-start="1326" selection-end="1326" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="30" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0">
@@ -475,14 +471,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/springyui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="208" column="14" selection-start="6048" selection-end="6049" vertical-scroll-proportion="-7.576923">
+        <state line="208" column="14" selection-start="6048" selection-end="6049" vertical-scroll-proportion="17.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/springy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="320" column="113" selection-start="8773" selection-end="8773" vertical-scroll-proportion="0.3322091">
+        <state line="321" column="88" selection-start="8779" selection-end="8779" vertical-scroll-proportion="0.8381113">
           <folding />
         </state>
       </provider>
