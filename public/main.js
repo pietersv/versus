@@ -58,15 +58,20 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html', 'springy', '
 
     render:function (data) {
 
-      if (graph) delete graph;
+      if (this.graph) {
+        this.graph.removeNodes();
+        delete this.graph;
+      }
 
-      var graph = new Graph(), term, dest_name, dest_node, dest_term, orig_node;
+      this.graph = new Graph();
+
+      var term, dest_name, dest_node, dest_term, orig_node;
       var nodes = {};
 
       for (var i=0; i<data.terms_array.length; i++) {
         var term_name = data.terms_array[i];
 
-        nodes[term_name] = graph.newNode({label: term_name});
+        nodes[term_name] = this.graph.newNode({label: term_name});
       }
 
       for (var term_name in data.terms) {
@@ -85,14 +90,14 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html', 'springy', '
             dest_node = nodes[dest_name];
             if (dest_node && orig_node) {
 
-              graph.newEdge(orig_node, dest_node, {color: '#22A', rank: k});
+              this.graph.newEdge(orig_node, dest_node, {color: '#22A', rank: k});
             }
           }
 
       }
 
       var springy = $('#springy-demo').springy({
-        graph:graph,
+        graph: this.graph,
         nodeSelected:function (node) {
           console.log('Node selected: ' + JSON.stringify(node.data));
         }
