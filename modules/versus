@@ -108,8 +108,10 @@ exports.Versus = (function() {
       len = original.trim().length + 1;
 
     for (var i = 0; i < versus.length; i++) {
-      match = versus[i].slice(len).trim();
-      matches.push(match.trim());
+      match = versus[i].split(' vs ');
+      if (match.length > 1) {
+        matches.push(match[1].trim());
+      }
     }
 
     return matches;

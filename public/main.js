@@ -24,7 +24,7 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html'], function ($
     var w = 960,
         h = 500;
 
-    var query_data = JSON.parse($("#query-data").html());
+    var query_data = JSON.parse($("#query-data").html() );
     console.log(query_data);
     var links = [];
     var nodes = {};
@@ -57,6 +57,7 @@ require(['jquery', 'backbone', 'javascripts/text!views/basic.html'], function ($
         .linkDistance(60)
         .charge(-400)
         .on("tick", tick)
+      .linkStrength(function(link) { return 1 / Math.sqrt((link.value+1)) * 3; })
         .start();
 
 
