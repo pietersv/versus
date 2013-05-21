@@ -1,7 +1,9 @@
 require.config({
   baseUrl:"/",
   paths:{
-    jquery:'javascripts/jquery'  },
+    jquery:'javascripts/jquery',
+    jquerymobile: 'javascripts/jquery.mobile-1.3.0.min'
+  },
   shim:{
     underscore:{
       exports:"_"
@@ -9,13 +11,19 @@ require.config({
   }
 });
 
-require(['jquery'], function ($, view) {
+require(['jquery', 'jquerymobile'], function ($, view) {
 
+  $.mobile.ajaxEnabled = false;
+  $(function() {onPageLoad(); });
 
-  $(function() {
+//  $('[data-role=page]').live('pageshow', function (event, ui) {
+//        onPageLoad();
+//  });
 
-    var w = 960,
-        h = 500;
+  function onPageLoad() {
+
+    var w = 600,
+        h = 400;
 
     var query_data = JSON.parse($("#query-data").html() );
     console.log(query_data);
@@ -54,7 +62,7 @@ require(['jquery'], function ($, view) {
         .start();
 
 
-    var svg = d3.select("body").append("svg:svg")
+    var svg = d3.select("#map").append("svg:svg")
         .attr("width", w)
         .attr("height", h);
 
@@ -121,144 +129,16 @@ require(['jquery'], function ($, view) {
       });
     }
 
-    $("#form").submit(function(evt) {
+    $("#query").bind("change", function(evt, ui) {
 
-      var query = $("#query").value();
+      var query = $("#query").val();
 
-      d3.json('/api/graph?query='+encodeURIComponent(query), function(error, json) {
+      //$.mobile.changePage( "/?query="+encodeURIComponent(query), { transition: "slideup"} );
+      window.location.href="/?query="+encodeURIComponent(query);
 
-      });
-      return false;
     });
+    return false;
+  };
 
-  });
+
 });
-
-//require(['jquery', 'backbone', 'javascripts/text!views/basic.html'], function ($, Backbone, view) {
-//
-//
-////  console.log(view);
-//  var BasicView = Backbone.View.extend({
-//
-//    template:_.template(view),
-//
-//    initialize:function (args) {
-//
-//      var self = this;
-//
-//      $("#form").on('submit', function (evt) {
-//        var query = $("#query").val(),
-//          url = '/search?query=' + encodeURIComponent(query),
-//          str = "<UL>",
-//          matches, term, substr;
-//
-//        var basicView = new BasicView({el:'#basic-view'});
-//
-//        $.get(url, function (data, textStatus, jqXhr) {
-//
-//          self.render(data);
-//
-//        });
-//        return false;
-//      });
-//
-//
-//      var width = 600;
-//      var height  = 400;
-//
-//
-//      this.nodes = {};
-//      this.links = [];
-//
-//
-//      this.force = d3.layout.force()
-//          .size([width, height])
-//          .nodes(this.nodes)
-//          .links(this.links)
-//          .linkDistance(30)
-//          .charge(-60)
-//        .start();
-//
-//      this.svg = d3.select("body").append("svg")
-//          .attr("width", width)
-//          .attr("height", height)
-//          .on("mousemove", this.mousemove)
-//          .on("mousedown", this.mousedown);
-//
-//
-//
-//    },
-//
-//
-//    render:function (data) {
-//
-//
-//      console.log(data);
-//
-//      var term, dest_name, dest_node, dest_term, orig_node;
-//
-//      for (var i=0; i<data.terms_array.length; i++) {
-//        var term_name = data.terms_array[i];
-//
-//        this.nodes[term_name] = {
-//          name: term_name,
-//          id: term_name
-//        };
-//      }
-//
-//      for (var term_name in data.terms) {
-//        term = data.terms[term_name]  ;
-//
-//        for (var k=0; k<term.length; k++) {
-//
-//          dest_name = term[k];
-//
-//          if (dest_node && orig_node) {
-//            this.links.push({
-//              source: term_name,
-//              target: dest_name
-//            });
-//          }
-//        }
-//
-//      }
-//      var link = this.svg.selectAll(".link")
-//           .data(this.links)
-//         .enter().append("line")
-//           .attr("class", "link")
-//           .style("stroke-width", function(d) { return Math.sqrt(d.value); });
-//
-//       var node = this.svg.selectAll(".node")
-//           .data(graph.nodes)
-//         .enter().append("circle")
-//           .attr("class", "node")
-//           .attr("r", 5)
-//           .style("fill", function(d) { return color(d.group); })
-//           .call(force.drag);
-//
-//       node.append("title")
-//           .text(function(d) { return d.name; });
-//
-//       force.on("tick", function() {
-//         link.attr("x1", function(d) { return d.source.x; })
-//             .attr("y1", function(d) { return d.source.y; })
-//             .attr("x2", function(d) { return d.target.x; })
-//             .attr("y2", function(d) { return d.target.y; });
-//
-//         node.attr("cx", function(d) { return d.x; })
-//             .attr("cy", function(d) { return d.y; });
-//       });
-//      console.log(this.nodes);
-//      console.log(this.links);
-//      this.force.nodes(this.nodes).links(this.links).start();
-//
-//    },
-//
-//    mousemove: function() { console.log("mousemove")},
-//    mousedown: function() { console.log("mousedown")},
-//
-//  });
-//
-//  var basicView = new BasicView({el:'#basic-view'});
-
-//});

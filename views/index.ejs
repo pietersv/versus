@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
   <link rel='stylesheet' href='/stylesheets/style.css' />
-<body>
-  <h1>Competitive network map</h1>
-  <form id="form" >
-    <label for="query">Search: </label>
-    <br/>
-    <input id="query" name="query" type="text" size="60" maxlength="60" value="" />
-    <input type='submit' value='submit'>
-  </form>
+  <link rel="stylesheet" href="stylesheets/jquery.mobile-1.3.0.min.css">
 
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-  <script src="javascripts/require.js" data-main="main.js"></script>
+  <body>
 
 
-  <script type="text/json" id="query-data">
-   <%-JSON.stringify(data)%>
-  </script>
 
+  <div data-role="page">
+
+    <div data-role="header">
+      <h1>xVersus</h1>
+      <input id="query" name="query" type="text" value="<%=query?query:''%>" data-mini="true" data-theme="c" />
+
+    </div>
+
+
+    <div data-role="content">
+
+
+
+      <script src="javascripts/require.js" data-main="main.js"></script>
+
+      <script type="text/json" id="query-data">
+       <%-JSON.stringify(data)%>
+      </script>
+
+        <div id="map"></div>
+
+     </div>
+
+  </div>
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
 
 </body>

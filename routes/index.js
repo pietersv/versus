@@ -35,10 +35,10 @@ exports.index = function(req, res){
           });
         }
       }
-      res.render('index', { title: 'Express' , data: {nodes: nodes, links: links}});
+      res.render('index', { title: 'Express' , data: {nodes: nodes, links: links}, query: query});
     });
   }
   else {
-    res.render('index', { title: 'Express' , data: null});
+    res.render('index', { title: 'Express' , data: null, query: null});
   };
 };
