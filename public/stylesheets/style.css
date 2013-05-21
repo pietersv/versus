@@ -33,3 +33,8 @@ text.shadow {
   stroke-width: 3px;
   stroke-opacity: 0.8;
 }
+.jqm-version {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+}
