@@ -8,7 +8,8 @@ var express = require('express')
   , https = require('https')
   , http = require('http')
   , path = require('path')
-  , Versus = require('./modules/versus').Versus;
+  ;
+
 
 
 var app = express();
@@ -34,6 +35,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+
 app.get('/users', user.list);
 
 var bing = {
@@ -45,30 +47,8 @@ var bing = {
 
 
 
-app.get('/search', function(req,res,next) {
-  var query = req.param('query').trim();
-
-  var versus = new Versus();
-
-  versus.analyze(query, function(data) {
-    res.send(data);
-  });
-});
-
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
 
-
-//https://api.datamarket.azure.com/Bing/SearchWeb/Web?Query=%27leo%20fender%27&Market=%27en-US%27&$top=50&$format=JSON"
-
-//C4/m6Z3o4lAOK3oKCyMwVlrQY2SvWA6S5v7uE99xbmY=
-//W49bx6nMO94OwmrAIgxSOPjXI/JcN6jZlM1NFaTFYt0=
-
-//C4%2Fm6Z3o4lAOK3oKCyMwVlrQY2SvWA6S5v7uE99xbmY%3D
-
-//https://user:C4%2Fm6Z3o4lAOK3oKCyMwVlrQY2SvWA6S5v7uE99xbmY%3D@api.datamarket.azure.com/Bing/SearchWeb/Web?Query=%27leo%20fender%27&Market=%27en-US%27&$top=50&$format=JSON
-
-//https://user:C4%2Fm6Z3o4lAOK3oKCyMwVlrQY2SvWA6S5v7uE99xbmY%3D@api.datamarket.azure.com/Bing/Search/Web?Query=%27leo%20fender%27&Market=%27en-US%27&$top=50&$format=JSON

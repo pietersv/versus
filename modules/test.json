@@ -1,0 +1,598 @@
+{"nodes":["joni mitchell", "bob dylan", "hercules", "john lennon", "the beatles", "leonard cohen", "johnny cash", "donovan", "beatles", "neil young", "hades", "hulk", "hydra", "superman", "diomedes", "thor", "perseus", "paul mccartney", "bill o'reilly", "bill o'reilly lyrics", "america", "elvis presley", "the us", "bill o reilly", "the rolling stones", "one direction", "queen", "the four seasons vinyl lp", "elvis", "wu tang", "the beach boys", "the grand ole opry", "gordon jenkins", "cypress hill", "nine inch nails", "wu-tang clan mashup mp3", "shea homes lawsuit", "shea homes", "shea lawsuit", "diabetes", "dempsey", "rl corp", "walton fed court", "rolling stones", "michael jackson", "beach boys", "rolling stones statistics", "rolling stone", "lynyrd skynyrd", "alabama", "neil diamond", "stephen stills", "neil diamond yahoo", "bruce springsteen", "hell", "satan", "voldemort", "zeus", "pluto", "kratos", "wolverine", "red hulk", "juggernaut", "abomination", "spiderman"], "links":[
+  {
+    "source":"joni mitchell",
+    "target":"bob dylan",
+    "rank":0
+  },
+  {
+    "source":"joni mitchell",
+    "target":"hercules",
+    "rank":1
+  },
+  {
+    "source":"bob dylan",
+    "target":"john lennon",
+    "rank":0
+  },
+  {
+    "source":"bob dylan",
+    "target":"the beatles",
+    "rank":1
+  },
+  {
+    "source":"bob dylan",
+    "target":"leonard cohen",
+    "rank":2
+  },
+  {
+    "source":"bob dylan",
+    "target":"johnny cash",
+    "rank":3
+  },
+  {
+    "source":"bob dylan",
+    "target":"donovan",
+    "rank":4
+  },
+  {
+    "source":"bob dylan",
+    "target":"beatles",
+    "rank":5
+  },
+  {
+    "source":"bob dylan",
+    "target":"neil young",
+    "rank":6
+  },
+  {
+    "source":"bob dylan",
+    "target":"bob marley",
+    "rank":7
+  },
+  {
+    "source":"bob dylan",
+    "target":"bruce springsteen",
+    "rank":8
+  },
+  {
+    "source":"bob dylan",
+    "target":"elvis",
+    "rank":9
+  },
+  {
+    "source":"bob dylan",
+    "target":"lou reed",
+    "rank":10
+  },
+  {
+    "source":"bob dylan",
+    "target":"michael jackson",
+    "rank":11
+  },
+  {
+    "source":"hercules",
+    "target":"hades",
+    "rank":0
+  },
+  {
+    "source":"hercules",
+    "target":"hulk",
+    "rank":1
+  },
+  {
+    "source":"hercules",
+    "target":"hydra",
+    "rank":2
+  },
+  {
+    "source":"hercules",
+    "target":"superman",
+    "rank":3
+  },
+  {
+    "source":"hercules",
+    "target":"diomedes",
+    "rank":4
+  },
+  {
+    "source":"hercules",
+    "target":"thor",
+    "rank":5
+  },
+  {
+    "source":"hercules",
+    "target":"perseus",
+    "rank":6
+  },
+  {
+    "source":"hercules",
+    "target":"heracles",
+    "rank":7
+  },
+  {
+    "source":"hercules",
+    "target":"shazam",
+    "rank":8
+  },
+  {
+    "source":"hercules",
+    "target":"samson movie",
+    "rank":9
+  },
+  {
+    "source":"hercules",
+    "target":"kratos",
+    "rank":10
+  },
+  {
+    "source":"hercules",
+    "target":"stepmother journeys",
+    "rank":11
+  },
+  {
+    "source":"john lennon",
+    "target":"paul mccartney",
+    "rank":0
+  },
+  {
+    "source":"john lennon",
+    "target":"bill o'reilly",
+    "rank":1
+  },
+  {
+    "source":"john lennon",
+    "target":"bill o'reilly lyrics",
+    "rank":2
+  },
+  {
+    "source":"john lennon",
+    "target":"america",
+    "rank":3
+  },
+  {
+    "source":"john lennon",
+    "target":"elvis presley",
+    "rank":4
+  },
+  {
+    "source":"john lennon",
+    "target":"the us",
+    "rank":5
+  },
+  {
+    "source":"john lennon",
+    "target":"bill o reilly",
+    "rank":6
+  },
+  {
+    "source":"john lennon",
+    "target":"bill o reilly lyrics",
+    "rank":7
+  },
+  {
+    "source":"john lennon",
+    "target":"bill",
+    "rank":8
+  },
+  {
+    "source":"john lennon",
+    "target":"the united states of america",
+    "rank":9
+  },
+  {
+    "source":"john lennon",
+    "target":"bill o'reilly 4shared",
+    "rank":10
+  },
+  {
+    "source":"john lennon",
+    "target":"nixon",
+    "rank":11
+  },
+  {
+    "source":"the beatles",
+    "target":"the rolling stones",
+    "rank":0
+  },
+  {
+    "source":"the beatles",
+    "target":"one direction",
+    "rank":1
+  },
+  {
+    "source":"the beatles",
+    "target":"queen",
+    "rank":2
+  },
+  {
+    "source":"the beatles",
+    "target":"the four seasons vinyl lp",
+    "rank":3
+  },
+  {
+    "source":"the beatles",
+    "target":"elvis",
+    "rank":4
+  },
+  {
+    "source":"the beatles",
+    "target":"wu tang",
+    "rank":5
+  },
+  {
+    "source":"the beatles",
+    "target":"the beach boys",
+    "rank":6
+  },
+  {
+    "source":"the beatles",
+    "target":"michael jackson",
+    "rank":7
+  },
+  {
+    "source":"the beatles",
+    "target":"justin bieber",
+    "rank":8
+  },
+  {
+    "source":"the beatles",
+    "target":"led zeppelin",
+    "rank":9
+  },
+  {
+    "source":"the beatles",
+    "target":"the stones",
+    "rank":10
+  },
+  {
+    "source":"the beatles",
+    "target":"the four seasons album",
+    "rank":11
+  },
+  {
+    "source":"leonard cohen",
+    "target":"bob dylan",
+    "rank":0
+  },
+  {
+    "source":"leonard cohen",
+    "target":"neil young",
+    "rank":1
+  },
+  {
+    "source":"johnny cash",
+    "target":"elvis",
+    "rank":0
+  },
+  {
+    "source":"johnny cash",
+    "target":"the grand ole opry",
+    "rank":1
+  },
+  {
+    "source":"johnny cash",
+    "target":"gordon jenkins",
+    "rank":2
+  },
+  {
+    "source":"johnny cash",
+    "target":"elvis presley",
+    "rank":3
+  },
+  {
+    "source":"johnny cash",
+    "target":"cypress hill",
+    "rank":4
+  },
+  {
+    "source":"johnny cash",
+    "target":"nine inch nails",
+    "rank":5
+  },
+  {
+    "source":"johnny cash",
+    "target":"wu-tang clan mashup mp3",
+    "rank":6
+  },
+  {
+    "source":"johnny cash",
+    "target":"the beatles",
+    "rank":7
+  },
+  {
+    "source":"johnny cash",
+    "target":"elvis facts",
+    "rank":8
+  },
+  {
+    "source":"johnny cash",
+    "target":"music today",
+    "rank":9
+  },
+  {
+    "source":"johnny cash",
+    "target":"gordon jenkins lyrics",
+    "rank":10
+  },
+  {
+    "source":"johnny cash",
+    "target":"laurent wolf mp3 download",
+    "rank":11
+  },
+  {
+    "source":"donovan",
+    "target":"shea homes lawsuit",
+    "rank":0
+  },
+  {
+    "source":"donovan",
+    "target":"shea homes",
+    "rank":1
+  },
+  {
+    "source":"donovan",
+    "target":"shea lawsuit",
+    "rank":2
+  },
+  {
+    "source":"donovan",
+    "target":"diabetes",
+    "rank":3
+  },
+  {
+    "source":"donovan",
+    "target":"dempsey",
+    "rank":4
+  },
+  {
+    "source":"donovan",
+    "target":"rl corp",
+    "rank":5
+  },
+  {
+    "source":"donovan",
+    "target":"walton fed court",
+    "rank":6
+  },
+  {
+    "source":"donovan",
+    "target":"dewey",
+    "rank":7
+  },
+  {
+    "source":"donovan",
+    "target":"otolaryngology",
+    "rank":8
+  },
+  {
+    "source":"donovan",
+    "target":"thomas",
+    "rank":9
+  },
+  {
+    "source":"donovan",
+    "target":"rafael marquez fight",
+    "rank":10
+  },
+  {
+    "source":"donovan",
+    "target":"bob dylan",
+    "rank":11
+  },
+  {
+    "source":"beatles",
+    "target":"rolling stones",
+    "rank":0
+  },
+  {
+    "source":"beatles",
+    "target":"michael jackson",
+    "rank":1
+  },
+  {
+    "source":"beatles",
+    "target":"beach boys",
+    "rank":2
+  },
+  {
+    "source":"beatles",
+    "target":"rolling stones statistics",
+    "rank":3
+  },
+  {
+    "source":"beatles",
+    "target":"rolling stone",
+    "rank":4
+  },
+  {
+    "source":"beatles",
+    "target":"elvis",
+    "rank":5
+  },
+  {
+    "source":"beatles",
+    "target":"one direction",
+    "rank":6
+  },
+  {
+    "source":"beatles",
+    "target":"stones",
+    "rank":7
+  },
+  {
+    "source":"beatles",
+    "target":"joan jett",
+    "rank":8
+  },
+  {
+    "source":"beatles",
+    "target":"justin bieber",
+    "rank":9
+  },
+  {
+    "source":"beatles",
+    "target":"led zeppelin",
+    "rank":10
+  },
+  {
+    "source":"beatles",
+    "target":"four seasons album",
+    "rank":11
+  },
+  {
+    "source":"neil young",
+    "target":"lynyrd skynyrd",
+    "rank":0
+  },
+  {
+    "source":"neil young",
+    "target":"alabama",
+    "rank":1
+  },
+  {
+    "source":"neil young",
+    "target":"neil diamond",
+    "rank":2
+  },
+  {
+    "source":"neil young",
+    "target":"stephen stills",
+    "rank":3
+  },
+  {
+    "source":"neil young",
+    "target":"bob dylan",
+    "rank":4
+  },
+  {
+    "source":"neil young",
+    "target":"neil diamond yahoo",
+    "rank":5
+  },
+  {
+    "source":"neil young",
+    "target":"bruce springsteen",
+    "rank":6
+  },
+  {
+    "source":"hades",
+    "target":"hell",
+    "rank":0
+  },
+  {
+    "source":"hades",
+    "target":"satan",
+    "rank":1
+  },
+  {
+    "source":"hades",
+    "target":"hercules",
+    "rank":2
+  },
+  {
+    "source":"hades",
+    "target":"voldemort",
+    "rank":3
+  },
+  {
+    "source":"hades",
+    "target":"zeus",
+    "rank":4
+  },
+  {
+    "source":"hades",
+    "target":"pluto",
+    "rank":5
+  },
+  {
+    "source":"hades",
+    "target":"kratos",
+    "rank":6
+  },
+  {
+    "source":"hades",
+    "target":"poseidon",
+    "rank":7
+  },
+  {
+    "source":"hades",
+    "target":"zeus vs poseidon",
+    "rank":8
+  },
+  {
+    "source":"hades",
+    "target":"osiris",
+    "rank":9
+  },
+  {
+    "source":"hades",
+    "target":"lake of fire",
+    "rank":10
+  },
+  {
+    "source":"hades",
+    "target":"lucifer",
+    "rank":11
+  },
+  {
+    "source":"hulk",
+    "target":"superman",
+    "rank":0
+  },
+  {
+    "source":"hulk",
+    "target":"wolverine",
+    "rank":1
+  },
+  {
+    "source":"hulk",
+    "target":"thor",
+    "rank":2
+  },
+  {
+    "source":"hulk",
+    "target":"red hulk",
+    "rank":3
+  },
+  {
+    "source":"hulk",
+    "target":"juggernaut",
+    "rank":4
+  },
+  {
+    "source":"hulk",
+    "target":"abomination",
+    "rank":5
+  },
+  {
+    "source":"hulk",
+    "target":"spiderman",
+    "rank":6
+  },
+  {
+    "source":"hulk",
+    "target":"thing",
+    "rank":7
+  },
+  {
+    "source":"hulk",
+    "target":"doomsday",
+    "rank":8
+  },
+  {
+    "source":"hulk",
+    "target":"game",
+    "rank":9
+  },
+  {
+    "source":"hulk",
+    "target":"superman games",
+    "rank":10
+  },
+  {
+    "source":"hulk",
+    "target":"wolverine games",
+    "rank":11
+  }
+]}
+

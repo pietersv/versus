@@ -1,6 +1,6 @@
 var http = require('http');
 
-console.log("Initializing vesus}");
+
 
 /**
  * General data structure
@@ -42,7 +42,7 @@ exports.Versus = (function() {
   Versus.prototype.analyze_one = function(done) {
     var self=this;
 
-    if (this.atbat.length>0 && this.iteration<10  ) {
+    if (this.atbat.length>0 && this.iteration<12  ) {
 
       var current_term = this.atbat.shift();
 
