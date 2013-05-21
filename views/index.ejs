@@ -11,14 +11,17 @@
 
     <div data-role="header">
       <h1>xVersus</h1>
-      <input id="query" name="query" type="text" value="<%=query?query:''%>" data-mini="true" data-theme="c" />
+      <div class="ui-block-a" style="width:75%">
+        <input id="query-input" name="query" type="text" value="<%=query?query:''%>" data-mini="true" data-inline="true" data-theme="c" />
+      </div>
+        <div class="ui-block-b" style="width:25%">
+          <a id="query-button" href="#" data-role="button">Go</a>
+          </div>
 
     </div>
 
 
     <div data-role="content">
-
-
 
       <script src="javascripts/require.js" data-main="main.js"></script>
 
@@ -26,7 +29,7 @@
        <%-JSON.stringify(data)%>
       </script>
 
-        <div id="map"></div>
+      <div id="map"></div>
 
      </div> <!-- content -->
 

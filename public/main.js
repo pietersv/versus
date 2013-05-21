@@ -22,15 +22,36 @@ require(['jquery', 'jquerymobile'], function ($, view) {
 
   function onPageLoad() {
 
-    var w = 600,
-        h = 400;
 
     var query_data = JSON.parse($("#query-data").html() );
     console.log(query_data);
+
+    if (query_data) {
+      initMap(query_data);
+    }
+    else
+    {
+      $("#query-input").val("Enter search term");
+    }
+
+
+    $("#query-input").bind("change", function(evt, ui) {
+      var query = $("#query-input").val();
+      window.location.href="/?query="+encodeURIComponent(query);
+    });
+
+    $("#query-button").bind("click", function(evt, ui) {
+      var query = $("#query-input").val();
+      window.location.href="/?query="+encodeURIComponent(query);
+      evt.stopPropagation();
+    });
+  };
+
+  function initMap(query_data) {
     var links = [];
     var nodes = {};
 
-    for (var n=0; n<query_data.nodes.length; n++) {
+    for ( var n=0; n<query_data.nodes.length; n++) {
        var term = query_data.nodes[n];
        nodes[term.toLocaleLowerCase()] = {name: term,id: term};
      }
@@ -51,6 +72,10 @@ require(['jquery', 'jquerymobile'], function ($, view) {
      }
 
 
+    var w = 600,
+        h = 400;
+
+
     var force = d3.layout.force()
         .nodes(d3.values(nodes))
         .links(links)
@@ -62,9 +87,9 @@ require(['jquery', 'jquerymobile'], function ($, view) {
         .start();
 
 
-    var svg = d3.select("#map").append("svg:svg")
-        .attr("width", w)
-        .attr("height", h);
+    var svg = d3.select("#map").append("svg:svg");
+//        .attr("width", w)
+//        .attr("height", h);
 
     // Per-type markers, as they don't inherit styles.
     svg.append("svg:defs").selectAll("marker")
@@ -129,14 +154,8 @@ require(['jquery', 'jquerymobile'], function ($, view) {
       });
     }
 
-    $("#query").bind("change", function(evt, ui) {
 
-      var query = $("#query").val();
 
-      //$.mobile.changePage( "/?query="+encodeURIComponent(query), { transition: "slideup"} );
-      window.location.href="/?query="+encodeURIComponent(query);
-
-    });
     return false;
   };
 
