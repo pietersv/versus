@@ -4,7 +4,6 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , https = require('https')
   , http = require('http')
   , path = require('path')
@@ -36,7 +35,6 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
-app.get('/users', user.list);
 
 var bing = {
   acctKey : "W49bx6nMO94OwmrAIgxSOPjXI/JcN6jZlM1NFaTFYt0=",

@@ -1,22 +1,15 @@
 require.config({
   baseUrl:"/",
   paths:{
-    jquery:'javascripts/jquery',
-    underscore:'javascripts/lodash',
-    backbone:'javascripts/backbone'
-  },
+    jquery:'javascripts/jquery'  },
   shim:{
     underscore:{
       exports:"_"
-    },
-    backbone:{
-      deps:['underscore', 'jquery'],
-      exports:'Backbone'
     }
   }
 });
 
-require(['jquery', 'backbone', 'javascripts/text!views/basic.html'], function ($, Backbone, view) {
+require(['jquery'], function ($, view) {
 
 
   $(function() {

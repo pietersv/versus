@@ -1,67 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      <%= title %>
-    </title>
-    <script type="text/javascript" src="javascripts/jquery.js"></script>
-    <script src="javascripts/require.js" data-main="main.js"></script>
-      <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<meta charset="utf-8">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+<body>
+  <h1>Competitive network map</h1>
+  <form id="form" >
+    <label for="query">Search: </label>
+    <br/>
+    <input id="query" name="query" type="text" size="60" maxlength="60" value="" />
+    <input type='submit' value='submit'>
+  </form>
 
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-      <style>
-
-      path.link {
-        fill: none;
-        stroke: #666;
-        stroke-width: 1.5px;
-      }
-
-      marker#licensing {
-        fill: green;
-      }
-
-      path.link.licensing {
-        stroke: green;
-      }
-
-      path.link.resolved {
-        stroke-dasharray: 0,2 1;
-      }
-
-      circle {
-        fill: #ccc;
-        stroke: #333;
-        stroke-width: 1.5px;
-      }
-
-      text {
-        font: 10px sans-serif;
-        pointer-events: none;
-      }
-
-      text.shadow {
-        stroke: #fff;
-        stroke-width: 3px;
-        stroke-opacity: .8;
-      }
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="javascripts/require.js" data-main="main.js"></script>
 
 
-      </style>
+  <script type="text/json" id="query-data">
+   <%-JSON.stringify(data)%>
+  </script>
 
 
-  </head>
-  <body>
-    <h1>Competitive network map</h1>
-    <form id="form" >
-      <label for="query">Search: </label>
-      <br/>
-      <input id="query" name="query" type="text" size="60" maxlength="60" value="" />
-      <input type='submit' value='submit'>
-    </form>
-
-
-  </body>
-
-
-</html>
+</body>
