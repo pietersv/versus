@@ -25,7 +25,7 @@ circle {
   stroke-width: 1.5px;
 }
 text {
-  font: 10px sans-serif;
+  font: 12px sans-serif;
   pointer-events: none;
 }
 text.shadow {
