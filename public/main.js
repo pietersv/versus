@@ -71,15 +71,16 @@ require(['jquery', 'jquerymobile'], function ($, view) {
        }
      }
 
-
-    var w = 600,
-        h = 400;
+    var viewport = {
+        width  : $(window).width(),
+        height : $(window).height()
+    };
 
 
     var force = d3.layout.force()
         .nodes(d3.values(nodes))
         .links(links)
-        .size([w, h])
+        .size([viewport.width, viewport.height])
         .linkDistance(60)
         .charge(-400)
         .on("tick", tick)
@@ -103,7 +104,9 @@ require(['jquery', 'jquerymobile'], function ($, view) {
         .attr("markerHeight", 6)
         .attr("orient", "auto")
         .append("svg:path")
-        .attr("d", "M0,-5L10,0L0,5");
+        .attr("d", "M0,-5L10,0L0,5")
+        .attr("preserveAspectRatio", "xMidYMid meet")
+    ;
 
 
 
