@@ -11,10 +11,11 @@
 </head>
 
 
-  <div data-role="page">
+  <div data-role="page" id="app">
 
     <div data-role="header">
       <h1>xVersus</h1>
+      <a href="#about" data-role="button">About</a>
       <table style='width:100%'><tr>
       <td>
         <input id="query-input" name="query" type="text" value="<%=query?query:''%>" data-mini="true" data-inline="true" data-theme="c" />
@@ -28,6 +29,17 @@
 
     <div data-role="content">
 
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41211722-1', 'protobi.com');
+      ga('send', 'pageview');
+
+    </script>
+
       <script src="javascripts/require.js" data-main="main.js"></script>
 
       <script type="text/json" id="query-data">
@@ -39,11 +51,68 @@
      </div> <!-- content -->
 
      <div class="jqm-footer" data-theme="c">
-       <p class="jqm-version">&copy; 2013 Protobi.  This content is released under the <a href="http://opensource.org/licenses/MIT">MIT License</a><p>
+       <p class="jqm-version">&copy; 2013 Protobi.
 
      </div>
 
   </div><!-- page -->
+
+   <div data-role="page" id="about">
+
+    <div data-role="header">
+      <h1>xVersus</h1>
+      <a href="#app" data-role="button">App</a>
+    </div><!-- page -->
+
+
+
+    <div data-role="content">
+<h1>What this is</h1>
+<p>xVersus uses search engine statistics to map out what other things people are comparing something to … and what they’re comparing those things to, … and so on.</p>
+People often for something of the form “X vs Y” to find out what other people think.  So many so that now just searching for “X vs” will yield the most frequently searched comparisons.  And that often yields surprising (and amusing) insights.
+
+<p><a href="/?query=knowledge"><i>Example:  'knowledge'</i></a></p>
+<a href="/?query=knowledge"><img src="/images/image-knowledge.png" height="204" width="625"></a>
+
+
+<h1>Uses</h1>
+<ul>
+<li>See not just your top competitors, but also theirs</i>
+<li>Graphic to include in a market research proposal</i>
+<li>Discover a product or concept you should know about</i>
+<li>A graphic to smarten up a presentation </i>
+<li>Entertainment</i>
+</ul>
+
+<h1>Caveats</h1>
+<ul>
+<li>Comparisons by year, e.g. “Outlook 2007 vs 2010”</li>
+<li>Synonymous terms, e.g. “Php vs Rails" vs "PhP vs Ruby on Rails” </li>
+<li>Overloading meanings, e.g. “Apple” (the company) vs "Apple" (fruit) </li>
+<li>Misspelled searches, e.g. “Bitter vs Margarine"</li>
+<li>Other ways to say ‘vs’ … e.g. “versus” and “v” </li>
+<li>Not every term is searched for alternatives.</li>
+
+</ul>
+
+<h1>Try it</h1>
+This turned out to be more fun than I expected.  I invite you to try this out and tell me what you think!   Here are some searches to get started...
+<li><a href="/?query=Good">“Good”</a></li>
+<li><a href="/?query=Apple">“Apple”</a></li>
+<li><a href="/?query=Godzilla">“Godzilla”</a></li>
+<li><a href="/?query=Mario">“Mario”</a></li>
+<li><a href="/?query=QlikView">“QlikView”</a></li>
+<li><a href="/?query=Boston">“Boston”</a></li>
+
+<h1>Contribute</h1>
+ Note an issue or provide an update. <a href="https://github.com/gradualstudent/versus">on GitHub</a>, open source under MIT License.
+
+<h1>Tell us what you think</h1>
+<a href="mailto: xversus@protobi.com">xversus@protobi.com</a>
+
+</div>
+
+
 
 
 
