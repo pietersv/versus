@@ -5,7 +5,7 @@ automatic competitive positioning analysis
 
 about
 =======
-See http://xversus.protobi.com/about
+See http://xversus.protobi.com/#about
 
 Backlog
 ========
