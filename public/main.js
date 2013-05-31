@@ -76,6 +76,7 @@ require(['jquery', 'jquerymobile'], function ($, view) {
         height : $(window).height()
     };
 
+      console.log("Viewport size is "+JSON.stringify(viewport));
 
     var force = d3.layout.force()
         .nodes(d3.values(nodes))
@@ -88,9 +89,13 @@ require(['jquery', 'jquerymobile'], function ($, view) {
         .start();
 
 
-    var svg = d3.select("#map").append("svg:svg");
+    var svg = d3.select("#map").
+        append("svg:svg")
+            .attr("width", window.innerWidth).attr("height",window.innerHeight)
+
 //        .attr("width", w)
 //        .attr("height", h);
+      ;
 
     // Per-type markers, as they don't inherit styles.
     svg.append("svg:defs").selectAll("marker")
