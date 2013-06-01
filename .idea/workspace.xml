@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed103c9-6226-4c24-a23d-49ecf1aa5769" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/logs.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/main.js" afterPath="$PROJECT_DIR$/public/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versus.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370011741338" ignored="false" />
-    <file path="/index.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370015144031" ignored="false" />
+    <file path="/Dummy.txt" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370050210780" ignored="false" />
+    <file path="/index.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370060868199" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369445862027" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/grunt.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369532020084" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/app/templates/element/distribution.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369537975177" ignored="false" />
@@ -17,8 +23,8 @@
     <file path="/main.styl" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369620983661" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/assets/css/index.css" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369535658150" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/app/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369538267446" ignored="false" />
-    <file path="/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369537932552" ignored="false" />
-    <file path="/a.dummy" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369792300103" ignored="false" />
+    <file path="/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370060193165" ignored="false" />
+    <file path="/a.dummy" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370057692444" ignored="false" />
     <file path="/*.regexp" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369792288829" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/app/templates/dataset/new.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369624613150" ignored="false" />
     <file path="/new.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369624552457" ignored="false" />
@@ -35,11 +41,30 @@
     <file path="$PROJECT_DIR$/../iconsult/views/ask.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012390490" ignored="false" />
     <file path="$PROJECT_DIR$/../iconsult/views/new_user.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012472487" ignored="false" />
     <file path="/new_user.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012464852" ignored="false" />
-    <file path="$PROJECT_DIR$/../iconsult/views/profile.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012724856" ignored="false" />
-    <file path="/profile.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012686671" ignored="false" />
-    <file path="$PROJECT_DIR$/../iconsult/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370012896651" ignored="false" />
-    <file path="/main.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370013268817" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/views/profile.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031669298" ignored="false" />
+    <file path="/profile.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031620227" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031798958" ignored="false" />
+    <file path="/main.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370059968441" ignored="false" />
     <file path="/style.styl" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370013628473" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/routes/index.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031580823" ignored="false" />
+    <file path="/index.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370061579033" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/views/answer.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370024224144" ignored="false" />
+    <file path="/answer.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370024223782" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/public/javascripts/app/answer.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370024418439" ignored="false" />
+    <file path="/answer.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370024300022" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/public/javascripts/app/profile.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031161727" ignored="false" />
+    <file path="/profile.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031016484" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/public/stylesheets/style.css" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370031797226" ignored="false" />
+    <file path="/a.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370029603669" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/modules/user.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370030815869" ignored="false" />
+    <file path="/user.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370030815246" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/views/welcome.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370033027762" ignored="false" />
+    <file path="/welcome.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370033010476" ignored="false" />
+    <file path="$PROJECT_DIR$/../iconsult/views/search.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370032901431" ignored="false" />
+    <file path="/search.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370032890340" ignored="false" />
+    <file path="/query.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370057952847" ignored="false" />
+    <file path="$PROJECT_DIR$/../protobi-server/models/dataset.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370055510403" ignored="false" />
+    <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062035819" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,16 +87,7 @@
       <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="8" selection-start="144" selection-end="144" vertical-scroll-proportion="47.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.styl" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/style.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="13" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
+            <state line="7" column="14" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -80,7 +96,16 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="33" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
+            <state line="68" column="34" selection-start="1961" selection-end="1961" vertical-scroll-proportion="-19.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/query.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="11" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -89,16 +114,34 @@
       <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="21" selection-start="265" selection-end="309" vertical-scroll-proportion="0.0">
+            <state line="13" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="90" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.81632656">
+            <state line="41" column="29" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logs.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/logs.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="53" column="37" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.6">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="versus" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/versus">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="101" column="23" selection-start="2085" selection-end="2111" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,8 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/javascripts/require.js" />
-        <option value="$PROJECT_DIR$/public/views/text.js" />
         <option value="$PROJECT_DIR$/public/views/basic.html" />
         <option value="$PROJECT_DIR$/public/javascripts/springyui.js" />
         <option value="$PROJECT_DIR$/public/javascripts/springy.js" />
@@ -132,12 +173,14 @@
         <option value="$PROJECT_DIR$/modules/test.json" />
         <option value="$PROJECT_DIR$/views/force.ejs" />
         <option value="$PROJECT_DIR$/modules/versus" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
+        <option value="$PROJECT_DIR$/modules/query.js" />
         <option value="$PROJECT_DIR$/public/main.js" />
+        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/logs.ejs" />
       </list>
     </option>
   </component>
@@ -173,7 +216,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,66 +286,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="versus" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,10 +302,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../iconsult" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/public/javascripts" />
@@ -366,9 +358,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32153392" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20086083" sideWeight="0.42477876" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20086083" sideWeight="0.5737463" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20373027" sideWeight="0.42477876" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20373027" sideWeight="0.6784661" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -377,7 +370,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32443532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -446,16 +438,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/indicator.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -464,11 +446,6 @@
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/versus">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="26" selection-start="2375" selection-end="2375" vertical-scroll-proportion="-29.346153" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
@@ -486,11 +463,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -501,13 +473,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="33" selection-start="1098" selection-end="1098" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/style.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="13" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0">
@@ -515,23 +480,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/main.js">
+    <entry file="file://$PROJECT_DIR$/modules/versus">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="8" selection-start="144" selection-end="144" vertical-scroll-proportion="47.5">
+        <state line="101" column="23" selection-start="2085" selection-end="2111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/require.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="21" selection-start="265" selection-end="309" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="14" selection-start="159" selection-end="159" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="34" selection-start="1961" selection-end="1961" vertical-scroll-proportion="-19.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/query.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="11" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="90" selection-start="2921" selection-end="2921" vertical-scroll-proportion="0.81632656">
+        <state line="41" column="29" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/logs.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="37" selection-start="1564" selection-end="1564" vertical-scroll-proportion="0.6">
           <folding />
         </state>
       </provider>

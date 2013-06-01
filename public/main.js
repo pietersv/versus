@@ -94,7 +94,7 @@ require(['jquery', 'jquerymobile'], function ($, view) {
             .attr("width", window.innerWidth).attr("height",window.innerHeight)
 
 //        .attr("width", w)
-//        .attr("height", h);
+//        .attr("h  eight", h);
       ;
 
     // Per-type markers, as they don't inherit styles.
