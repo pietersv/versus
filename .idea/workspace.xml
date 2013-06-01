@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9ed103c9-6226-4c24-a23d-49ecf1aa5769" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/logs.ejs" afterPath="$PROJECT_DIR$/views/logs.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="versus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +57,7 @@
     <file path="/search.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370032890340" ignored="false" />
     <file path="/query.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370057952847" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/models/dataset.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370055510403" ignored="false" />
-    <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062335113" ignored="false" />
+    <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062663484" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +125,7 @@
       <file leaf-file-name="logs.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/logs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="23" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.7">
+            <state line="58" column="52" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.7">
               <folding />
             </state>
           </provider>
@@ -525,7 +524,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/logs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="23" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.7">
+        <state line="58" column="52" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.7">
           <folding />
         </state>
       </provider>
