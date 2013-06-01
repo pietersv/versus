@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed103c9-6226-4c24-a23d-49ecf1aa5769" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/logs.ejs" afterPath="$PROJECT_DIR$/views/logs.ejs" />
     </list>
     <ignored path="versus.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370050210780" ignored="false" />
-    <file path="/index.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370060868199" ignored="false" />
+    <file path="/index.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062854995" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369445862027" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/grunt.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369532020084" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/app/templates/element/distribution.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369537975177" ignored="false" />
@@ -57,7 +58,7 @@
     <file path="/search.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370032890340" ignored="false" />
     <file path="/query.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370057952847" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/models/dataset.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370055510403" ignored="false" />
-    <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062663484" ignored="false" />
+    <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370062978314" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +117,7 @@
       <file leaf-file-name="index.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="29" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
+            <state line="130" column="0" selection-start="4691" selection-end="4691" vertical-scroll-proportion="-18.0">
               <folding />
             </state>
           </provider>
@@ -125,7 +126,7 @@
       <file leaf-file-name="logs.ejs" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/logs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="52" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.7">
+            <state line="29" column="44" selection-start="933" selection-end="933" vertical-scroll-proportion="0.12">
               <folding />
             </state>
           </provider>
@@ -171,8 +172,8 @@
         <option value="$PROJECT_DIR$/modules/query.js" />
         <option value="$PROJECT_DIR$/public/main.js" />
         <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/logs.ejs" />
       </list>
     </option>
@@ -508,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="29" selection-start="1321" selection-end="1321" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="6" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
@@ -522,9 +516,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="130" column="0" selection-start="4691" selection-end="4691" vertical-scroll-proportion="-18.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/logs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="52" selection-start="1828" selection-end="1828" vertical-scroll-proportion="0.7">
+        <state line="29" column="44" selection-start="933" selection-end="933" vertical-scroll-proportion="0.12">
           <folding />
         </state>
       </provider>
