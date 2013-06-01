@@ -43,6 +43,7 @@
                 <td>Time</td>
                 <td>Browser</td>
                 <td>Platform</td>
+                 <td>Device</td>
               </tr>
           </thead>
           <tbody>
@@ -55,6 +56,7 @@
                 <td><%=d.toLocaleTimeString()%></td>
                 <td><%=log.user_agent.ua.family%></td>
                 <td><%=log.user_agent.os.family%></td>
+                <td><%=log.user_agent.device%></td>
               </tr>
             <% } %>
 
