@@ -11,37 +11,13 @@ var express = require('express')
   ;
 var app = express();
 
+// the variable process.env.DB_URI is specified as a configuration variable
+// For Heroku, this can be set as $> heroku config:set DB_URI=mongodb://...
+// And locally, can be specifed in a .env file
+// The confidential key is not committed to this open source project for simple reasons.
 
-var config = {
-  development: {
-    uid: '1ac4255e-c655-4b1f-9220-189d49d2eb56',
-    secret: 'and miles to go before we sleep',
-    db: {
-      "uri" : "mongodb://localhost/versus",
-      "db": 'versus',
-      "host": "localhost",
-      "port": 27017
-    }
-  },
-  production: {
-    uid: '1ac4255e-c655-4b1f-9220-189d49d2eb56',
-    secret: 'he shook his bells to ask if there was some mistake',
-    db: {
-      //mongodb://<dbuser>:<dbpassword>@ds053877.mongolab.com:53877/heroku_app11944434
-      "uri": "mongodb://heroku_app12482736:i7vnkje9b8h8inaan4st1nh4fu@ds049467.mongolab.com:49467/heroku_app12482736",
-      "db":"heroku_app12482736",
-      "host":"ds049467.mongolab.com",
-      "port":49467,
-      "username":"heroku_app12482736",
-      "password":"i7vnkje9b8h8inaan4st1nh4fu@ds049467",
-      "shell": "mongo ds049467.mongolab.com:49467/heroku_app12482736 -u heroku_app12482736 -p i7vnkje9b8h8inaan4st1nh4fu@ds049467"
-    }
-  }
-} [app.settings.env];
-
-
-
-var db = mongoose.connect(config.db.uri);
+console.log("Using DB_URI="+process.env.DB_URI);
+var db = mongoose.connect(process.env.DB_URI);
 
 
 
