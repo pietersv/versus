@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ed103c9-6226-4c24-a23d-49ecf1aa5769" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/versus" afterPath="$PROJECT_DIR$/modules/versus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/logs.ejs" afterPath="$PROJECT_DIR$/views/logs.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/query.js" afterPath="$PROJECT_DIR$/modules/query.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
     </list>
     <ignored path="versus.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,7 +18,7 @@
     <file path="$PROJECT_DIR$/../protobi-client/app/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369538267446" ignored="false" />
     <file path="/app.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370135288680" ignored="false" />
     <file path="/a.dummy" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370057692444" ignored="false" />
-    <file path="/*.regexp" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369792288829" ignored="false" />
+    <file path="/*.regexp" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370149328045" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-client/app/templates/dataset/new.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369624613150" ignored="false" />
     <file path="/new.html" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369624552457" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/public/require.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1369700608689" ignored="false" />
@@ -64,6 +58,7 @@
     <file path="/query.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370148156586" ignored="false" />
     <file path="$PROJECT_DIR$/../protobi-server/models/dataset.js" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370055510403" ignored="false" />
     <file path="/logs.ejs" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370148212810" ignored="false" />
+    <file path="$PROJECT_DIR$/public/stylesheets/style.css" changelist="9ed103c9-6226-4c24-a23d-49ecf1aa5769" time="1370149284138" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="34" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-19.0">
+            <state line="45" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.7118227">
               <folding />
             </state>
           </provider>
@@ -128,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logs.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="logs.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/logs.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="30" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.6018519">
+            <state line="60" column="30" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -140,7 +135,7 @@
       <file leaf-file-name="versus.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modules/versus.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="23" selection-start="2085" selection-end="2111" vertical-scroll-proportion="0.0">
+            <state line="83" column="18" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -175,11 +170,11 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.styl" />
         <option value="$PROJECT_DIR$/public/main.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/modules/query.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/views/logs.ejs" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -493,20 +488,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="34" selection-start="1228" selection-end="1228" vertical-scroll-proportion="-19.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/versus.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="23" selection-start="2085" selection-end="2111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/query.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="40" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
@@ -530,7 +511,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/logs.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="30" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.6018519">
+        <state line="60" column="30" selection-start="1892" selection-end="1892" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/versus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="18" selection-start="1738" selection-end="1738" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="1344" selection-end="1344" vertical-scroll-proportion="0.7118227">
           <folding />
         </state>
       </provider>

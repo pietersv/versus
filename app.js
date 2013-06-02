@@ -45,13 +45,6 @@ app.get('/', routes.index.app);
 app.get('/logs', routes.index.logs);
 
 
-var bing = {
-  acctKey : "W49bx6nMO94OwmrAIgxSOPjXI/JcN6jZlM1NFaTFYt0=",
-  baseUrl : "https://api.datamarket.azure.com/Bing/Search/Web&Query=",
-  host: 'api.datamarket.azure.com',
-  path: '/Bing/Search/Web&Query='
-};
-
 
 
 
