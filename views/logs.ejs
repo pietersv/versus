@@ -44,6 +44,7 @@
                 <td>Browser</td>
                 <td>Platform</td>
                  <td>Device</td>
+                 <td>IP</td>
               </tr>
           </thead>
           <tbody>
@@ -57,6 +58,7 @@
                 <td><%=log.user_agent.ua.family%></td>
                 <td><%=log.user_agent.os.family%></td>
                 <td><%= log.user_agent.device.family%></td>
+                <td><%= log.ip%></td>
               </tr>
             <% } %>
 

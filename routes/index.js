@@ -3,7 +3,7 @@
  * GET home page.
  */
 
-var Versus = require('../modules/versus').Versus;
+var Versus = require('../modules/versus.js').Versus;
 var QueryLog = require('../modules/query');
 var uap = require('ua-parser');
 
@@ -19,6 +19,7 @@ exports.index = {
   app: function(req, res){
     var query = req.query['query'];
     var r = uap.parse(req.headers['user-agent']);
+    console.log(req.ip);
     console.log(r);
 
     console.log(req.headers['user-agent']);
@@ -57,7 +58,8 @@ exports.index = {
           result_count: nodes.length,
           user_agent: r,
           nodes: nodes,
-          links: links
+          links: links,
+          ip: req.ip
         });
 
         queryLog.save(function(err, log) {

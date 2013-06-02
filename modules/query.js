@@ -7,6 +7,7 @@ var queryLogSchema = new mongoose.Schema(
      ,user_agent: {type: mongoose.Schema.Types.Mixed, required: false}
      ,nodes: {type: mongoose.Schema.Types.Mixed, required: false}
      ,links: {type: mongoose.Schema.Types.Mixed, required: false}
+     ,ip: {type: String, required: true}
     },
     {
       noId: true
