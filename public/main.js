@@ -6,7 +6,7 @@ require.config({
   },
   shim:{
     underscore:{
-      exports:"_"
+       exports:"_"
     }
   }
 });
